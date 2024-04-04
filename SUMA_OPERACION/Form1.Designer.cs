@@ -37,6 +37,9 @@
             this.btnSumar = new System.Windows.Forms.Button();
             this.lblVadiartxt1 = new System.Windows.Forms.Label();
             this.lblValidarTxt2 = new System.Windows.Forms.Label();
+            this.btnmultiplicación = new System.Windows.Forms.Button();
+            this.btndivisión = new System.Windows.Forms.Button();
+            this.btnresta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -81,7 +84,7 @@
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(334, 268);
+            this.lblResultado.Location = new System.Drawing.Point(507, 319);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(327, 55);
             this.lblResultado.TabIndex = 4;
@@ -100,7 +103,7 @@
             // btnSumar
             // 
             this.btnSumar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSumar.Location = new System.Drawing.Point(141, 268);
+            this.btnSumar.Location = new System.Drawing.Point(89, 268);
             this.btnSumar.Name = "btnSumar";
             this.btnSumar.Size = new System.Drawing.Size(93, 43);
             this.btnSumar.TabIndex = 6;
@@ -128,11 +131,47 @@
             this.lblValidarTxt2.TabIndex = 8;
             this.lblValidarTxt2.Text = "validar";
             // 
+            // btnmultiplicación
+            // 
+            this.btnmultiplicación.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmultiplicación.Location = new System.Drawing.Point(487, 268);
+            this.btnmultiplicación.Name = "btnmultiplicación";
+            this.btnmultiplicación.Size = new System.Drawing.Size(93, 43);
+            this.btnmultiplicación.TabIndex = 9;
+            this.btnmultiplicación.Text = "MULTIPLICACIÓN";
+            this.btnmultiplicación.UseVisualStyleBackColor = true;
+            this.btnmultiplicación.Click += new System.EventHandler(this.btnmultiplicación_Click);
+            // 
+            // btndivisión
+            // 
+            this.btndivisión.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndivisión.Location = new System.Drawing.Point(367, 268);
+            this.btndivisión.Name = "btndivisión";
+            this.btndivisión.Size = new System.Drawing.Size(93, 43);
+            this.btndivisión.TabIndex = 10;
+            this.btndivisión.Text = "DIVISIÓN";
+            this.btndivisión.UseVisualStyleBackColor = true;
+            this.btndivisión.Click += new System.EventHandler(this.btndivisión_Click);
+            // 
+            // btnresta
+            // 
+            this.btnresta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnresta.Location = new System.Drawing.Point(241, 268);
+            this.btnresta.Name = "btnresta";
+            this.btnresta.Size = new System.Drawing.Size(93, 43);
+            this.btnresta.TabIndex = 11;
+            this.btnresta.Text = "RESTAR";
+            this.btnresta.UseVisualStyleBackColor = true;
+            this.btnresta.Click += new System.EventHandler(this.btnresta_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(897, 402);
+            this.Controls.Add(this.btnresta);
+            this.Controls.Add(this.btndivisión);
+            this.Controls.Add(this.btnmultiplicación);
             this.Controls.Add(this.lblValidarTxt2);
             this.Controls.Add(this.lblVadiartxt1);
             this.Controls.Add(this.btnSumar);
@@ -160,6 +199,9 @@
         private System.Windows.Forms.Button btnSumar;
         private System.Windows.Forms.Label lblVadiartxt1;
         private System.Windows.Forms.Label lblValidarTxt2;
+        private System.Windows.Forms.Button btnmultiplicación;
+        private System.Windows.Forms.Button btndivisión;
+        private System.Windows.Forms.Button btnresta;
     }
 }
 
